@@ -645,6 +645,8 @@ html[lang="en"] .lang:hover [data-l="en"],html[lang="ru"] .lang:hover [data-l="r
 .foot__nav{display:flex;gap:28px;flex-wrap:wrap;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase}
 .foot__nav a{color:var(--text-2);padding:8px 0;transition:color var(--t-fast)}
 .foot__nav a:hover{color:var(--accent)}
+.foot__legal{margin-top:14px;font:400 12px/1.5 var(--f-body);color:var(--text-2)}
+html.i18n-pending body{visibility:hidden}
 .foot__bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(40px,6vw,80px);padding-top:20px;border-top:1px solid var(--line);font-size:10.5px;letter-spacing:.12em;color:var(--text-3)}
 
 /* ---------- reduced motion: final states, no movement ---------- */

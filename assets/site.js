@@ -33,6 +33,7 @@
   function applyLang(lang, save) {
     LANG = lang === 'ru' ? 'ru' : 'en';
     document.documentElement.lang = LANG;
+    document.title = LANG === 'ru' ? 'AI Automation Studio · Автоматизация и AI для бизнеса' : 'AI Automation Studio · AI infrastructure for business';
     $$('[data-i18n]').forEach(el => {
       const key = el.dataset.i18n;
       const html = LANG === 'en' ? enCache.get(el) : (I18N.ru[key] != null ? I18N.ru[key] : enCache.get(el));
@@ -751,8 +752,9 @@
   document.addEventListener('visibilitychange', () => document.body.classList.toggle('paused', document.hidden));
   RMQ.addEventListener('change', e => { RM = e.matches; net.sync(); if (RM) $$('.reveal').forEach(el => el.classList.add('in')); });
 
-  /* initial language: ?lang=ru, then saved choice, else English */
+  /* initial language: ?lang=, then saved choice, else Russian */
   const qp = new URLSearchParams(location.search).get('lang');
-  const initial = qp || store.get('aas-lang') || 'en';
-  if (initial !== 'en') applyLang(initial, !!qp);
+  const initial = qp || store.get('aas-lang') || 'ru';
+  applyLang(initial, !!qp);
+  document.documentElement.classList.remove('i18n-pending');
 })();
