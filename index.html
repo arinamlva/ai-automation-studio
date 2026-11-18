@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Automation Studio · AI infrastructure for business</title>
+<meta name="description" content="A small studio that builds Telegram bots, AI agents, CRM automation, document processing and integrations, so your business tools pass data to each other without manual copying.">
+<meta name="theme-color" content="#080A0D">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://arinamlva.github.io/ai-automation-studio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Automation Studio · Hand the routine to bots and AI.">
+<meta property="og:description" content="We connect the tools your company already uses and hand repetitive work to bots and AI agents.">
+<meta property="og:url" content="https://arinamlva.github.io/ai-automation-studio/">
+<meta property="og:image" content="https://arinamlva.github.io/ai-automation-studio/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23080A0D'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23B6FF4A'/%3E%3Cg stroke='%23F2F4F5' stroke-width='1.6' fill='none'%3E%3Cpath d='M16 4v6M16 22v6M4 16h6M22 16h6'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&family=Inter+Tight:wght@600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>
+  /* Preloader only on the first visit of a session, never with reduced motion */
+  (function(){try{var s=sessionStorage.getItem('aas-booted');var r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!s&&!r)document.documentElement.classList.add('booting')}catch(e){}})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"AI Automation Studio","description":"AI automation, Telegram bots, AI agents, CRM automation, document processing and system integration for businesses.","slogan":"Hand the routine to bots and AI."}
+</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<!-- PRELOADER -->
+<div class="boot" aria-hidden="true">
+  <div class="boot__inner">
+    <p class="boot__line mono">SYSTEM INITIALIZATION</p>
+    <p class="boot__line mono">CONNECTING MODULES...</p>
+    <p class="boot__line mono">LOADING INTERFACE...</p>
+    <p class="boot__line mono boot__ready">SYSTEM READY.</p>
+    <div class="boot__bar"><span></span></div>
+  </div>
+</div>
+
+<!-- ENVIRONMENT: one fixed background layer -->
+<div class="env" aria-hidden="true"><div class="env__grid"></div><div class="env__glow"></div><div class="env__grain"></div></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+
+<!-- NAV -->
+<header class="nav" id="top">
+  <a class="nav__logo" href="#top" aria-label="AI Automation Studio, back to top">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="3.6" class="logo-core"/><path d="M16 3v7M16 22v7M3 16h7M22 16h7" /><circle cx="16" cy="16" r="9" class="logo-ring"/></svg>
+    <span class="mono">AI AUTOMATION STUDIO</span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#scenarios" data-i18n="nav.solutions">Solutions</a>
+    <a href="#process" data-i18n="nav.process">Process</a>
+    <a href="#contact" data-i18n="nav.contacts">Contacts</a>
+  </nav>
+  <div class="nav__right">
+    <button class="lang mono" type="button" aria-label="Switch language" data-lang-toggle><span data-l="en">EN</span><i>/</i><span data-l="ru">RU</span></button>
+    <a class="btn btn--sm btn--accent nav__cta" href="#contact"><span data-i18n="nav.cta">LET'S AUTOMATE</span></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="mnav" id="mnav" hidden>
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#scenarios" data-i18n="nav.solutions">Solutions</a>
+  <a href="#process" data-i18n="nav.process">Process</a>
+  <a href="#contact" data-i18n="nav.contacts">Contacts</a>
+  <a class="btn btn--accent" href="#contact"><span data-i18n="nav.cta">LET'S AUTOMATE</span></a>
+</div>
+
+<main id="main" tabindex="-1">
+
+<!-- HERO -->
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <div class="stage">
+    <div class="stage__media" aria-hidden="true">
+      <div class="poster"></div>
+      <video id="heroVideo" preload="none" muted playsinline aria-hidden="true" tabindex="-1"></video>
+      <div class="scrim"></div>
+    </div>
+
+    <div class="band band--1" data-band="0,0.22" data-ramp="0.03">
+      <p class="kicker mono" data-i18n="hero.kicker">SYSTEM / 001 · AI INFRASTRUCTURE FOR BUSINESS</p>
+      <h1 id="hero-title" class="h-hero split" data-i18n="hero.title" data-split="grid">HAND THE ROUTINE<br>TO BOTS AND AI.</h1>
+      <p class="lede hero__sub" data-i18n="hero.sub">We connect the tools your company already uses and hand repetitive work to bots and AI agents. Your team stops copying data from one program to another.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--accent" href="#contact"><span data-i18n="hero.cta1">AUTOMATE YOUR BUSINESS</span> <b aria-hidden="true">↗</b></a>
+        <a class="btn btn--ghost" href="#services"><span data-i18n="hero.cta2">EXPLORE SERVICES</span> <b aria-hidden="true">↓</b></a>
+      </div>
+    </div>
+
+    <div class="band band--2" data-band="0.28,0.5" aria-hidden="true">
+      <p class="kicker mono">LAYER / 02</p>
+      <p class="h-band split" data-i18n="hero.b2" data-split="weave">Your tools stop<br>working alone.</p>
+      <p class="band__sub" data-i18n="hero.b2s">CRM, Telegram, email, sheets. One system.</p>
+    </div>
+
+    <div class="band band--3" data-band="0.56,0.76" aria-hidden="true">
+      <p class="kicker mono">LAYER / 03</p>
+      <p class="h-band split" data-i18n="hero.b3" data-split="drift">No more typing<br>the same data twice.</p>
+    </div>
+
+    <div class="band band--4" data-band="0.82,1">
+      <p class="kicker mono" aria-hidden="true">CORE / 004 · LIVE MAP</p>
+      <h2 class="h-settle split" data-i18n="hero.b4" data-split="rise">YOUR BUSINESS. REWIRED BY AI.</h2>
+    </div>
+
+    <div class="net-wrap" id="net" aria-label="Interactive map of an automated business system">
+      <svg class="net" id="netSvg" role="group"></svg>
+      <div class="net-tip mono" role="status" aria-live="polite"></div>
+      <p class="net-hint mono" data-i18n="hero.hint">HOVER OR TAP A MODULE</p>
+    </div>
+
+    <ul class="hud chip mono" aria-label="Demo status panel">
+      <li><span data-i18n="hud.status">SYSTEM STATUS</span>: <em data-i18n="hud.op">OPERATIONAL</em></li>
+      <li><span data-i18n="hud.engine">AI ENGINE</span>: <em data-i18n="hud.active">ACTIVE</em></li>
+      <li><span data-i18n="hud.wf">WORKFLOWS</span>: <em data-i18n="hud.connected">CONNECTED</em></li>
+      <li><span data-i18n="hud.mode">MODE</span>: <em data-i18n="hud.auto">AUTONOMOUS</em></li>
+      <li class="hud__note" data-i18n="hud.note">demo interface</li>
+    </ul>
+
+    <div class="loader" aria-hidden="true">
+      <svg class="ring" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" class="ring__bg"/><circle cx="24" cy="24" r="20" class="ring__fg"/></svg>
+      <span class="mono" data-i18n="hero.scroll">SCROLL TO DESCEND</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec about" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="idx mono"><span>002</span> / <span data-i18n="about.k">PHILOSOPHY</span></p>
+      <h2 id="about-title" class="h-sec" data-i18n="about.title">WE AUTOMATE THE ROUTINE.<br>YOU RUN THE BUSINESS.</h2>
+    </header>
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p class="lede" data-i18n="about.p1">If someone spends the day moving data from one program to another, hiring a second person for it won't help. The manual copying is the problem.</p>
+        <p data-i18n="about.p2">We connect your services to each other and automate the steps that repeat every day. AI is added only where a task needs to read text and choose what to do next, such as sorting an incoming request or pulling fields out of an invoice.</p>
+        <p data-i18n="about.p3">A project usually starts with one process, for example incoming leads, and other processes are added once the first one works.</p>
+      </div>
+      <figure class="chaos reveal" aria-label="Visual: scattered manual tasks turn into an organized system as you scroll">
+        <canvas id="chaosCanvas"></canvas>
+        <figcaption class="chaos__labels mono">
+          <span class="chaos__l" data-i18n="about.before">INPUT: MANUAL CHAOS</span>
+          <span class="chaos__meter"><i></i></span>
+          <span class="chaos__r" data-i18n="about.after">OUTPUT: ONE SYSTEM</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec services" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <header class="sec__head sec__head--split reveal">
+      <div>
+        <p class="idx mono"><span>003</span> / <span data-i18n="svc.k">WHAT WE BUILD</span></p>
+        <h2 id="services-title" class="h-sec" data-i18n="svc.title">SEVEN MODULES.<br>ONE SYSTEM.</h2>
+      </div>
+      <p class="sec__aside" data-i18n="svc.aside">Each module handles one kind of routine work. You can start with one and add others later, and they pass data to each other.</p>
+    </header>
+
+    <div class="mods">
+      <!-- 01 -->
+      <article class="mod mod--a reveal" data-demo="chat">
+        <div class="mod__bar mono"><span>MODULE / 01</span><span class="mod__live"><i></i>ONLINE</span></div>
+        <h3 class="mod__title">AI CHATBOTS &amp; TELEGRAM BOTS</h3>
+        <p class="mod__tag" data-i18n="s1.tag">Your business communicates automatically.</p>
+        <div class="mod__demo demo-chat" aria-hidden="true">
+          <div class="tg">
+            <div class="tg__top mono"><span class="tg__ava"></span><span>Support bot</span><em>online</em></div>
+            <div class="tg__body">
+              <p class="msg msg--in" data-i18n="d.chat1">Hi! Can I book a consultation for Friday?</p>
+              <p class="msg msg--out" data-i18n="d.chat2">Sure. What time works for you, and what is the topic?</p>
+              <p class="msg msg--in" data-i18n="d.chat3">2 pm. Delivery automation.</p>
+              <p class="msg msg--out" data-i18n="d.chat4">Booked for Friday, 14:00. A manager will confirm shortly.</p>
+              <p class="msg msg--sys mono" data-i18n="d.chat5">✓ Deal created in CRM · manager notified</p>
+            </div>
+          </div>
+        </div>
+        <dl class="mod__pfr">
+          <div><dt class="mono" data-i18n="l.problem">PROBLEM</dt><dd data-i18n="s1.p">Managers answer the same questions all day, and new requests get lost in chats.</dd></div>
+          <div><dt class="mono" data-i18n="l.result">RESULT</dt><dd data-i18n="s1.r">Every request gets an answer and lands in one place.</dd></div>
+        </dl>
+        <ol class="flow mono" aria-label="How it works">
+          <li data-i18n="s1.f1">Client writes in Telegram</li><li data-i18n="s1.f2">AI reads the request</li><li data-i18n="s1.f3">Collects the details</li><li data-i18n="s1.f4">Creates a deal in CRM</li><li data-i18n="s1.f5">Notifies a manager</li>
+        </ol>
+        <details class="inc"><summary class="mono"><span data-i18n="l.inc">WHAT'S INCLUDED</span><i></i></summary>
+          <ul data-i18n="s1.inc"><li>Telegram bots for business</li><li>Request intake bots</li><li>AI consultants</li><li>Customer support</li><li>FAQ assistants on your knowledge base</li><li>Booking and appointments</li><li>Collecting client details</li><li>Handing complex requests to managers</li><li>Integration with CRM and internal systems</li></ul>
+        </details>
+      </article>
+
+      <!-- 02 -->
+      <article class="mod mod--b reveal" data-demo="agent">
+        <div class="mod__bar mono"><span>MODULE / 02</span><span class="mod__live"><i></i>ONLINE</span></div>
+        <h3 class="mod__title">AI AGENTS &amp; AI ASSISTANTS</h3>
+        <p class="mod__tag" data-i18n="s2.tag">Digital employees for repetitive tasks.</p>
+        <div class="mod__demo demo-agent" aria-hidden="true">
+          <p class="agent__q mono"><b>&gt;</b> <span data-i18n="d.ag0">What is our refund policy for B2B clients?</span></p>
+          <ul class="agent__steps mono">
+            <li data-i18n="d.ag1">Searching internal docs</li>
+            <li data-i18n="d.ag2">Found 3 relevant files</li>
+            <li data-i18n="d.ag3">Drafting the answer</li>
+            <li data-i18n="d.ag4">Adding source links</li>
+          </ul>
+          <p class="agent__a" data-i18n="d.ag5">B2B refunds are processed within 14 days after the request. Sources: policy.pdf, contract-template.docx</p>
+        </div>
+        <dl class="mod__pfr">
+          <div><dt class="mono" data-i18n="l.problem">PROBLEM</dt><dd data-i18n="s2.p">Your team spends hours searching documents and preparing the same reports.</dd></div>
+          <div><dt class="mono" data-i18n="l.result">RESULT</dt><dd data-i18n="s2.r">Each answer links to the documents it is based on, so anyone can check it.</dd></div>
+        </dl>
+        <ol class="flow mono" aria-label="How it works">
+          <li data-i18n="s2.f1">Employee asks a question</li><li data-i18n="s2.f2">Agent searches the docs</li><li data-i18n="s2.f3">Writes an answer</li><li data-i18n="s2.f4">Adds links to sources</li>
+        </ol>
+        <details class="inc"><summary class="mono"><span data-i18n="l.inc">WHAT'S INCLUDED</span><i></i></summary>
+          <ul data-i18n="s2.inc"><li>AI assistants for employees</li><li>Internal company helpers</li><li>AI agents for sales</li><li>AI agents for customer support</li><li>Search across internal documentation</li><li>Processing incoming requests</li><li>Preparing reports</li><li>Analysis of documents and correspondence</li><li>Multi-step automated scenarios</li></ul>
+        </details>
+      </article>
+
+      <!-- 03 -->
+      <article class="mod mod--c reveal" data-demo="crm">
+        <div class="mod__bar mono"><span>MODULE / 03</span><span class="mod__live"><i></i>ONLINE</span></div>
+        <h3 class="mod__title">CRM &amp; SALES AUTOMATION</h3>
+        <p class="mod__tag" data-i18n="s3.tag">Turn every lead into a managed process.</p>
+        <div class="mod__demo demo-crm" aria-hidden="true">
+          <div class="crm">
+            <div class="crm__col"><p class="mono" data-i18n="d.crm1">NEW</p></div>
+            <div class="crm__col"><p class="mono" data-i18n="d.crm2">IN WORK</p></div>
+            <div class="crm__col"><p class="mono" data-i18n="d.crm3">WON</p></div>
+            <div class="crm__card c1"><b>Lead #241</b><span>web form · auto</span></div>
+            <div class="crm__card c2"><b>Lead #242</b><span>telegram · auto</span></div>
+            <div class="crm__card c3"><b>Lead #239</b><span>follow-up sent</span></div>
+          </div>
+        </div>
+        <dl class="mod__pfr">
+          <div><dt class="mono" data-i18n="l.problem">PROBLEM</dt><dd data-i18n="s3.p">Leads sit in inboxes, follow-ups get forgotten, and nobody sees the whole pipeline.</dd></div>
+          <div><dt class="mono" data-i18n="l.result">RESULT</dt><dd data-i18n="s3.r">No lead is left without an owner or a next step.</dd></div>
+        </dl>
+        <ol class="flow mono" aria-label="How it works">
+          <li data-i18n="s3.f1">Form submitted</li><li data-i18n="s3.f2">Deal created</li><li data-i18n="s3.f3">Manager assigned</li><li data-i18n="s3.f4">Notification sent</li><li data-i18n="s3.f5">Follow-up chain starts</li>
+        </ol>
+        <details class="inc"><summary class="mono"><span data-i18n="l.inc">WHAT'S INCLUDED</span><i></i></summary>
+          <ul data-i18n="s3.inc"><li>CRM setup</li><li>Sales pipelines</li><li>Automatic lead distribution</li><li>Reminders for managers</li><li>Automatic follow-up messages</li><li>Deal status control</li><li>Client base segmentation</li><li>CRM integration with Telegram, websites and messengers</li><li>Customer journey automation</li></ul>
+        </details>
+      </article>
+
+      <!-- 04 -->
+      <article class="mod mod--d reveal" data-demo="flow">
+        <div class="mod__bar mono"><span>MODULE / 04</span><span class="mod__live"><i></i>ONLINE</span></div>
+        <h3 class="mod__title">BUSINESS PROCESS AUTOMATION</h3>
+        <p class="mod__tag" data-i18n="s4.tag">Connect everything. Automate anything repetitive.</p>
+        <div class="mod__demo demo-flow" aria-hidden="true">
+          <svg viewBox="0 0 520 150" class="wf">
+            <path class="wf__line" d="M50 75 H150"/><path class="wf__line" d="M150 75 C190 75 190 35 230 35 H260"/><path class="wf__line" d="M150 75 C190 75 190 115 230 115 H260"/><path class="wf__line" d="M260 35 C300 35 300 75 340 75"/><path class="wf__line" d="M260 115 C300 115 300 75 340 75"/><path class="wf__line" d="M340 75 H470"/>
+            <path class="wf__pulse" d="M50 75 H150 C190 75 190 35 230 35 H260 C300 35 300 75 340 75 H470"/>
+            <path class="wf__pulse wf__pulse--2" d="M50 75 H150 C190 75 190 115 230 115 H260 C300 115 300 75 340 75 H470"/>
+            <g class="wf__n" transform="translate(50 75)"><rect x="-34" y="-16" width="68" height="32" rx="3"/><text y="4">ORDER</text></g>
+            <g class="wf__n" transform="translate(150 75)"><rect x="-34" y="-16" width="68" height="32" rx="3"/><text y="4">CHECK</text></g>
+            <g class="wf__n" transform="translate(260 35)"><rect x="-34" y="-16" width="68" height="32" rx="3"/><text y="4">DOC</text></g>
+            <g class="wf__n" transform="translate(260 115)"><rect x="-34" y="-16" width="68" height="32" rx="3"/><text y="4">NOTIFY</text></g>
+            <g class="wf__n" transform="translate(340 75)"><rect x="-34" y="-16" width="68" height="32" rx="3"/><text y="4">MERGE</text></g>
+            <g class="wf__n wf__n--end" transform="translate(470 75)"><rect x="-38" y="-16" width="76" height="32" rx="3"/><text y="4">DATABASE</text></g>
+          </svg>
+        </div>
+        <dl class="mod__pfr">
+          <div><dt class="mono" data-i18n="l.problem">PROBLEM</dt><dd data-i18n="s4.p">Data gets copied by hand between tools, and every copy is a chance for a mistake.</dd></div>
+          <div><dt class="mono" data-i18n="l.result">RESULT</dt><dd data-i18n="s4.r">Routine operations run by themselves, the same way every time.</dd></div>
+        </dl>
+        <ol class="flow mono" aria-label="How it works">
+          <li data-i18n="s4.f1">Order received</li><li data-i18n="s4.f2">Data checked</li><li data-i18n="s4.f3">Document created</li><li data-i18n="s4.f4">Owner notified</li><li data-i18n="s4.f5">Database updated</li>
+        </ol>
+        <details class="inc"><summary class="mono"><span data-i18n="l.inc">WHAT'S INCLUDED</span><i></i></summary>
+          <ul data-i18n="s4.inc"><li>Automation of routine operations</li><li>Connecting different services</li><li>Automatic data transfer</li><li>Database synchronization</li><li>Document workflow automation</li><li>Approval automation</li><li>Notification automation</li><li>Automatic task creation</li><li>Internal request automation</li><li>Connecting different APIs</li></ul>
+        </details>
+      </article>
+
+      <!-- 05 -->
+      <article class="mod mod--e reveal" data-demo="doc">
+        <div class="mod__bar mono"><span>MODULE / 05</span><span class="mod__live"><i></i>ONLINE</span></div>
+        <h3 class="mod__title">AI DOCUMENT PROCESSING</h3>
+        <p class="mod__tag" data-i18n="s5.tag">From documents to structured data.</p>
+        <div class="mod__demo demo-doc" aria-hidden="true">
+          <div class="doc">
+            <div class="doc__page"><span class="doc__scan"></span><i></i><i></i><i class="hl h1"></i><i></i><i class="hl h2"></i><i></i><i class="hl h3"></i><i></i></div>
+            <div class="doc__arrow mono">→</div>
+            <table class="doc__table mono">
+              <tr><th>FIELD</th><th>VALUE</th></tr>
+              <tr class="r1"><td>invoice</td><td>INV-0193</td></tr>
+              <tr class="r2"><td>amount</td><td>1 240.00</td></tr>
+              <tr class="r3"><td>due</td><td>2026-12-01</td></tr>
+            </table>
+          </div>
+        </div>
+        <dl class="mod__pfr">
+          <div><dt class="mono" data-i18n="l.problem">PROBLEM</dt><dd data-i18n="s5.p">Invoices and PDFs are retyped into tables line by line.</dd></div>
+          <div><dt class="mono" data-i18n="l.result">RESULT</dt><dd data-i18n="s5.r">Fields from documents reach your table without anyone typing them.</dd></div>
+        </dl>
+        <ol class="flow mono" aria-label="How it works">
+          <li data-i18n="s5.f1">PDF arrives</li><li data-i18n="s5.f2">AI extracts the fields</li><li data-i18n="s5.f3">Checks they are complete</li><li data-i18n="s5.f4">Writes to a table</li><li data-i18n="s5.f5">Notifies the owner</li>
+        </ol>
+        <details class="inc"><summary class="mono"><span data-i18n="l.inc">WHAT'S INCLUDED</span><i></i></summary>
+          <ul data-i18n="s5.inc"><li>Document recognition</li><li>OCR</li><li>Extracting data from PDFs and images</li><li>Processing incoming files</li><li>Automatic document classification</li><li>Extracting data from invoices and requests</li><li>Short summaries</li><li>Moving information into CRM and tables</li><li>Checking data against your rules</li></ul>
+        </details>
+      </article>
+
+      <!-- 06 -->
+      <article class="mod mod--f reveal" data-demo="int">
+        <div class="mod__bar mono"><span>MODULE / 06</span><span class="mod__live"><i></i>ONLINE</span></div>
+        <h3 class="mod__title">API &amp; SYSTEM INTEGRATION</h3>
+        <p class="mod__tag" data-i18n="s6.tag">Your tools should work as one system.</p>
+        <div class="mod__demo demo-int" aria-hidden="true">
+          <svg viewBox="0 0 420 170" class="int">
+            <g class="int__lines"><path d="M60 40 L210 85"/><path d="M60 130 L210 85"/><path d="M360 40 L210 85"/><path d="M360 130 L210 85"/><path d="M210 18 L210 85"/></g>
+            <g class="int__app a1" transform="translate(60 40)"><rect x="-44" y="-15" width="88" height="30" rx="3"/><text y="4">WEBSITE</text></g>
+            <g class="int__app a2" transform="translate(60 130)"><rect x="-44" y="-15" width="88" height="30" rx="3"/><text y="4">CRM</text></g>
+            <g class="int__app a3" transform="translate(360 40)"><rect x="-44" y="-15" width="88" height="30" rx="3"/><text y="4">TELEGRAM</text></g>
+            <g class="int__app a4" transform="translate(360 130)"><rect x="-44" y="-15" width="88" height="30" rx="3"/><text y="4">SHEETS</text></g>
+            <g class="int__app a5" transform="translate(210 18)"><rect x="-44" y="-13" width="88" height="26" rx="3"/><text y="4">AI MODEL</text></g>
+            <g class="int__hub" transform="translate(210 85)"><circle r="20"/><circle r="5" class="int__core"/></g>
+          </svg>
+        </div>
+        <dl class="mod__pfr">
+          <div><dt class="mono" data-i18n="l.problem">PROBLEM</dt><dd data-i18n="s6.p">Your website, CRM, messengers and sheets each live their own life.</dd></div>
+          <div><dt class="mono" data-i18n="l.result">RESULT</dt><dd data-i18n="s6.r">One connected system instead of five separate tools.</dd></div>
+        </dl>
+        <ol class="flow mono" aria-label="How it works">
+          <li>Website</li><li>CRM</li><li>Telegram</li><li>Google Sheets</li><li data-i18n="s6.f5">AI model</li>
+        </ol>
+        <details class="inc"><summary class="mono"><span data-i18n="l.inc">WHAT'S INCLUDED</span><i></i></summary>
+          <ul data-i18n="s6.inc"><li>API integrations</li><li>Webhooks</li><li>Website and CRM integration</li><li>Telegram and internal systems</li><li>Connecting AI models</li><li>Payment service integration</li><li>Google Sheets and databases</li><li>Third-party SaaS platforms</li><li>Custom integrations</li></ul>
+        </details>
+      </article>
+
+      <!-- 07 -->
+      <article class="mod mod--g reveal" data-demo="chart">
+        <div class="mod__bar mono"><span>MODULE / 07</span><span class="mod__live"><i></i>ONLINE</span></div>
+        <div class="mod__split">
+          <div>
+            <h3 class="mod__title">AI ANALYTICS &amp; REPORTING</h3>
+            <p class="mod__tag" data-i18n="s7.tag">Make data work for decisions.</p>
+            <dl class="mod__pfr">
+              <div><dt class="mono" data-i18n="l.problem">PROBLEM</dt><dd data-i18n="s7.p">Reports are put together by hand from several sources, and they arrive late.</dd></div>
+              <div><dt class="mono" data-i18n="l.result">RESULT</dt><dd data-i18n="s7.r">Fresh numbers arrive on schedule, and nobody has to build them.</dd></div>
+            </dl>
+            <ol class="flow mono" aria-label="How it works">
+              <li data-i18n="s7.f1">CRM and ad data</li><li data-i18n="s7.f2">AI analysis</li><li data-i18n="s7.f3">Report generated</li><li data-i18n="s7.f4">Sent to the owner</li>
+            </ol>
+            <details class="inc"><summary class="mono"><span data-i18n="l.inc">WHAT'S INCLUDED</span><i></i></summary>
+              <ul data-i18n="s7.inc"><li>Automatic reports</li><li>Collecting data from different sources</li><li>AI analysis of information</li><li>Sales summaries</li><li>Analysis of customer requests</li><li>Monitoring key metrics</li><li>Automatic alerts on changes</li><li>Interactive business dashboards</li></ul>
+            </details>
+          </div>
+          <div class="mod__demo demo-chart" aria-hidden="true">
+            <div class="dash">
+              <div class="dash__top mono"><span data-i18n="d.dash">WEEKLY REPORT · SAMPLE DATA</span><span class="dash__live">AUTO</span></div>
+              <div class="bars"><i style="--h:.42"></i><i style="--h:.58"></i><i style="--h:.5"></i><i style="--h:.71"></i><i style="--h:.64"></i><i style="--h:.83"></i><i style="--h:.77"></i></div>
+              <svg class="spark" viewBox="0 0 300 60" preserveAspectRatio="none"><path d="M0 48 L50 40 L100 44 L150 28 L200 32 L250 14 L300 18"/></svg>
+              <p class="dash__ai mono"><b>AI:</b> <span data-i18n="d.dashai">Requests up this week. Most questions are about delivery times.</span></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec process" id="process" aria-labelledby="process-title">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="idx mono"><span>004</span> / <span data-i18n="pr.k">HOW IT WORKS</span></p>
+      <h2 id="process-title" class="h-sec" data-i18n="pr.title">FROM MANUAL<br>TO AUTOMATED.</h2>
+    </header>
+    <div class="tl reveal">
+      <div class="tl__rail" role="tablist" aria-label="Process stages">
+        <span class="tl__track" aria-hidden="true"><span class="tl__fill"></span></span>
+        <button class="tl__step" role="tab" aria-selected="true" aria-controls="tl-panel" id="tl-0" data-step="0"><span class="mono">01</span><b>DISCOVER</b></button>
+        <button class="tl__step" role="tab" aria-selected="false" aria-controls="tl-panel" id="tl-1" data-step="1"><span class="mono">02</span><b>DESIGN</b></button>
+        <button class="tl__step" role="tab" aria-selected="false" aria-controls="tl-panel" id="tl-2" data-step="2"><span class="mono">03</span><b>BUILD</b></button>
+        <button class="tl__step" role="tab" aria-selected="false" aria-controls="tl-panel" id="tl-3" data-step="3"><span class="mono">04</span><b>DEPLOY &amp; OPTIMIZE</b></button>
+      </div>
+      <div class="tl__body" id="tl-panel" role="tabpanel" aria-labelledby="tl-0">
+        <div class="tl__vis" aria-hidden="true">
+          <svg viewBox="0 0 400 260" class="pv" data-stage="0">
+            <g class="pv__grid"></g>
+            <g class="pv__links"></g>
+            <g class="pv__nodes"></g>
+            <circle class="pv__lens" cx="0" cy="0" r="34"/>
+          </svg>
+          <p class="tl__state mono"></p>
+        </div>
+        <div class="tl__text">
+          <p class="tl__num mono">01 / 04</p>
+          <h3 class="tl__title">DISCOVER</h3>
+          <p class="tl__desc" data-i18n="pr.d0">We look at how work moves through your company and list the steps people repeat by hand. Then we pick the ones worth automating first.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIOS (the interactive moment) -->
+<section class="sec scen" id="scenarios" aria-labelledby="scen-title">
+  <div class="wrap">
+    <header class="sec__head sec__head--split reveal">
+      <div>
+        <p class="idx mono"><span>005</span> / <span data-i18n="sc.k">AUTOMATION SCENARIOS</span></p>
+        <h2 id="scen-title" class="h-sec" data-i18n="sc.title">SEE IT<br>IN ACTION.</h2>
+      </div>
+      <p class="sec__aside" data-i18n="sc.aside">Pick a scenario and run it. Watch a request travel through the system, step by step.</p>
+    </header>
+    <div class="sc reveal">
+      <div class="sc__tabs" role="tablist" aria-label="Scenarios">
+        <button role="tab" class="sc__tab" aria-selected="true" data-sc="0"><span class="mono">01</span><b data-i18n="sc.t0">Lead automation</b></button>
+        <button role="tab" class="sc__tab" aria-selected="false" data-sc="1"><span class="mono">02</span><b data-i18n="sc.t1">Customer support</b></button>
+        <button role="tab" class="sc__tab" aria-selected="false" data-sc="2"><span class="mono">03</span><b data-i18n="sc.t2">Document processing</b></button>
+        <button role="tab" class="sc__tab" aria-selected="false" data-sc="3"><span class="mono">04</span><b data-i18n="sc.t3">Internal AI assistant</b></button>
+      </div>
+      <div class="sc__panel" role="tabpanel">
+        <div class="sc__pipe" aria-hidden="true"><div class="sc__track"><span class="sc__pulse"></span></div><ol class="sc__nodes"></ol></div>
+        <div class="sc__side">
+          <p class="sc__desc"></p>
+          <div class="sc__log mono" aria-live="polite"><p class="sc__logh">SYSTEM LOG</p><ul></ul></div>
+          <div class="sc__ctas">
+            <button class="btn btn--ghost sc__run" type="button"><span data-i18n="sc.run">RUN SCENARIO</span> <b aria-hidden="true">▶</b></button>
+            <a class="btn btn--accent sc__discuss" href="#contact"><span data-i18n="sc.discuss">DISCUSS THIS SOLUTION</span> <b aria-hidden="true">↗</b></a>
+          </div>
+        </div>
+      </div>
+      <p class="note mono" data-i18n="sc.note">Demonstration scenarios that show how such systems work. Not client case studies.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="sec stack" id="stack" aria-labelledby="stack-title">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="idx mono"><span>006</span> / <span data-i18n="st.k">TECHNOLOGY STACK</span></p>
+      <h2 id="stack-title" class="h-sec" data-i18n="st.title">POWERED BY THE<br>RIGHT TECHNOLOGY.</h2>
+    </header>
+    <div class="stk reveal">
+      <svg class="stk__net" aria-hidden="true"></svg>
+      <div class="stk__grid"></div>
+      <div class="stk__info mono" aria-live="polite"><span class="stk__k">NODE</span><b class="stk__n">--</b><span class="stk__d" data-i18n="st.hint">Hover or tap a technology to see what it does.</span></div>
+    </div>
+    <p class="note mono" data-i18n="st.note">Tools we can work with, chosen per task. No certification or partner status with these companies is implied.</p>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec why" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="idx mono"><span>007</span> / <span data-i18n="why.k">WHY US</span></p>
+      <h2 id="why-title" class="h-sec" data-i18n="why.title">SMALL TEAM.<br>NO MIDDLEMEN.</h2>
+    </header>
+    <div class="why__list">
+      <article class="why__item reveal">
+        <svg class="why__ill draw" viewBox="0 0 120 80" aria-hidden="true"><path d="M10 60 C30 10 50 70 70 20 S100 50 110 40" class="x"/><path d="M10 40 H110"/><circle cx="110" cy="40" r="4"/></svg>
+        <p class="mono why__n">01</p>
+        <h3 data-i18n="why.t1">NO UNNECESSARY COMPLEXITY</h3>
+        <p data-i18n="why.p1">We don't add technology for its own sake. We choose the approach that fits the specific task.</p>
+      </article>
+      <article class="why__item reveal">
+        <svg class="why__ill draw" viewBox="0 0 120 80" aria-hidden="true"><rect x="12" y="14" width="40" height="52" rx="2"/><rect x="68" y="14" width="40" height="52" rx="2"/><path d="M52 40 H68"/><circle cx="60" cy="40" r="4"/></svg>
+        <p class="mono why__n">02</p>
+        <h3 data-i18n="why.t2">BUILT AROUND YOUR BUSINESS</h3>
+        <p data-i18n="why.p2">We build around the processes your company has today. Your team keeps working the way it is used to.</p>
+      </article>
+      <article class="why__item reveal">
+        <svg class="why__ill draw" viewBox="0 0 120 80" aria-hidden="true"><circle cx="60" cy="40" r="7"/><path d="M60 33 V8 M60 47 V72 M53 40 H18 M67 40 H102"/><circle cx="60" cy="8" r="3"/><circle cx="60" cy="72" r="3"/><circle cx="18" cy="40" r="3"/><circle cx="102" cy="40" r="3"/></svg>
+        <p class="mono why__n">03</p>
+        <h3 data-i18n="why.t3">CONNECTED ECOSYSTEM</h3>
+        <p data-i18n="why.p3">We connect the services you already pay for. Moving to new software is not a requirement.</p>
+      </article>
+      <article class="why__item reveal">
+        <svg class="why__ill draw" viewBox="0 0 120 80" aria-hidden="true"><path d="M10 40 H50"/><rect x="50" y="26" width="28" height="28" rx="14"/><path d="M78 40 H110"/><path d="M58 40 l5 5 l9 -10"/></svg>
+        <p class="mono why__n">04</p>
+        <h3 data-i18n="why.t4">HUMAN-CENTERED AI</h3>
+        <p data-i18n="why.p4">Where a mistake would cost money or a client, the AI prepares the action and an employee approves it.</p>
+      </article>
+    </div>
+
+    <div class="faq reveal">
+      <p class="idx mono"><span>FAQ</span> / <span data-i18n="faq.k">THE HONEST ANSWERS</span></p>
+      <details><summary><span data-i18n="faq.q1">Will we own what you build?</span><i></i></summary><p data-i18n="faq.a1">Yes. Workflows, code and accounts are set up on your side and documented. You can export them or hand them to another team at any time.</p></details>
+      <details><summary><span data-i18n="faq.q2">What if an automation breaks?</span><i></i></summary><p data-i18n="faq.a2">Every failed step sends an alert and leaves a record in the log, so you see it the same day. Steps where an error would be expensive are confirmed by a person.</p></details>
+      <details><summary><span data-i18n="faq.q3">We don't know what to automate. Where do we start?</span><i></i></summary><p data-i18n="faq.a3">With a short audit. We look at how work moves through your company and point out the repeating steps worth automating first.</p></details>
+      <details><summary><span data-i18n="faq.q4">What happens after launch?</span><i></i></summary><p data-i18n="faq.a4">You get documentation and a walkthrough of how everything works. Support after launch is available if you want it.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="cta reveal">
+      <p class="idx mono"><span>008</span> / <span data-i18n="ct.k">START AUTOMATING</span></p>
+      <h2 id="contact-title" class="h-cta" data-i18n="ct.title">YOUR NEXT BUSINESS UPGRADE STARTS HERE.</h2>
+      <p class="lede" data-i18n="ct.sub">Tell us what slows your business down. We'll reply with what can be automated and how we would do it.</p>
+      <a class="btn btn--accent btn--lg" href="#form"><span data-i18n="ct.cta">LET'S BUILD YOUR SYSTEM</span> <b aria-hidden="true">↗</b></a>
+    </div>
+
+    <form class="form reveal" id="form" novalidate>
+      <div class="form__bar mono"><span>REQUEST / NEW</span><span class="form__dots"><i></i><i></i><i></i></span></div>
+      <div class="form__grid">
+        <label class="f"><span class="f__l mono" data-i18n="f.name">Name</span><input name="name" autocomplete="name" required maxlength="80"><span class="f__err mono" data-i18n="f.req">Required field</span></label>
+        <label class="f"><span class="f__l mono" data-i18n="f.company">Company</span><input name="company" autocomplete="organization" maxlength="120"></label>
+        <label class="f"><span class="f__l mono" data-i18n="f.contact">Email / Telegram</span><input name="contact" required maxlength="120" placeholder="you@company.com / @username"><span class="f__err mono" data-i18n="f.contactErr">Enter an email or a Telegram @username</span></label>
+        <label class="f"><span class="f__l mono" data-i18n="f.what">What do you want to automate?</span>
+          <select name="topic" required>
+            <option value="" data-i18n="f.choose">Choose a direction</option>
+            <option value="chatbots" data-i18n="o.chatbots">AI chatbots &amp; Telegram bots</option>
+            <option value="agents" data-i18n="o.agents">AI agents &amp; assistants</option>
+            <option value="crm" data-i18n="o.crm">CRM &amp; sales automation</option>
+            <option value="process" data-i18n="o.process">Business process automation</option>
+            <option value="docs" data-i18n="o.docs">AI document processing</option>
+            <option value="integration" data-i18n="o.integration">API &amp; system integration</option>
+            <option value="analytics" data-i18n="o.analytics">AI analytics &amp; reporting</option>
+            <option value="sc-lead" data-i18n="o.sc0">Scenario: lead automation</option>
+            <option value="sc-support" data-i18n="o.sc1">Scenario: customer support</option>
+            <option value="sc-docs" data-i18n="o.sc2">Scenario: document processing</option>
+            <option value="sc-assistant" data-i18n="o.sc3">Scenario: internal AI assistant</option>
+            <option value="unsure" data-i18n="o.unsure">Not sure yet, need an audit</option>
+          </select><span class="f__err mono" data-i18n="f.req">Required field</span></label>
+        <label class="f f--wide"><span class="f__l mono" data-i18n="f.task">Tell us about your task</span><textarea name="task" rows="5" maxlength="3000" required></textarea><span class="f__err mono" data-i18n="f.taskErr">A few words about the task, please</span></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </div>
+      <div class="form__foot">
+        <button class="btn btn--accent btn--lg" type="submit"><span data-i18n="f.send">SEND REQUEST</span> <b aria-hidden="true">→</b></button>
+        <p class="form__status mono" role="status" aria-live="polite"></p>
+      </div>
+      <div class="form__ok" aria-hidden="true">
+        <p class="mono form__okk">SYSTEM MESSAGE:</p>
+        <p class="form__okt" data-i18n="f.ok">REQUEST RECEIVED.</p>
+        <p class="form__oks" data-i18n="f.okSub">We'll reply to the contact you left.</p>
+        <button class="btn btn--ghost btn--sm form__again" type="button"><span data-i18n="f.again">SEND ANOTHER</span></button>
+      </div>
+    </form>
+    <ul class="contacts mono" id="contacts" hidden></ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <p class="foot__brand">AI AUTOMATION STUDIO</p>
+      <p class="mono foot__tag" data-i18n="ft.tag">AUTOMATION AND AI FOR BUSINESS PROCESSES.</p>
+    </div>
+    <nav class="foot__nav mono" aria-label="Footer">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#scenarios" data-i18n="nav.solutions">Solutions</a>
+      <a href="#process" data-i18n="nav.process">Process</a>
+      <a href="#contact" data-i18n="nav.contacts">Contacts</a>
+    </nav>
+  </div>
+  <div class="wrap foot__bottom mono">
+    <span>© 2026 AI AUTOMATION STUDIO. <span data-i18n="ft.ops">ALL SYSTEMS OPERATIONAL.</span></span>
+    <span class="foot__mantra" data-i18n="ft.m">LESS MANUAL WORK.</span>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
