@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://arinamlva.github.io/ai-automation-studio/sitemap.xml
+Sitemap: https://ai-studio.website.yandexcloud.net/sitemap.xml

@@ -11,6 +11,13 @@ assets/config.js      contacts and form endpoint (fill in later)
 assets/hero-*.{mp4,jpg}  hero video, poster, ending, mobile still
 ```
 
+## Live
+
+- Main: https://ai-studio.website.yandexcloud.net/ (Yandex Object Storage, bucket `ai-studio`)
+- Mirror: https://arinamlva.github.io/ai-automation-studio/ (canonical points to the main address)
+
+Redeploy to Yandex: upload changed files with `yc storage s3 cp FILE s3://ai-studio/FILE --content-type TYPE`.
+
 ## Publish on GitHub Pages
 
 1. Create a repository and upload the **contents** of this folder (so `index.html` is at the repo root, `.nojekyll` included).
