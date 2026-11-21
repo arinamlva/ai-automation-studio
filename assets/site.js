@@ -689,6 +689,63 @@
   })();
 
   /* ---------------------------------------------------------
+     TELEGRAM MENU (positions are numbered because the offer refers to them by number)
+     --------------------------------------------------------- */
+  (function tgMenu() {
+    const grid = $('#mnGrid'), combo = $('#mnCombo'), terms = $('#mnTerms');
+    if (!grid) return;
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    let first = true;
+    function render() {
+      const M = D().menu;
+      grid.innerHTML = M.items.map((it, i) => `
+        <article class="mn__card reveal">
+          <div class="mn__top"><span class="mn__n mono">№${i + 1}</span><span class="mn__term mono">${esc(it.term)}</span></div>
+          <h3 class="mn__t">${esc(it.t)}</h3>
+          <p class="mn__price">${esc(it.price)}${it.sub ? ` <span>${esc(it.sub)}</span>` : ''}</p>
+          <p class="mn__art"><span class="mono">${esc(M.art)}</span> ${esc(it.art)}</p>
+          <ul class="mn__list">${it.b.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+          <button class="btn btn--ghost btn--sm mn__want" type="button" data-n="${i + 1}">${esc(M.want)}${i + 1}</button>
+        </article>`).join('');
+      const C = M.combo;
+      combo.innerHTML = `
+        <div class="mn-combo__in reveal">
+          <div class="mn-combo__head">
+            <h3 class="mn-combo__t">${esc(C.t)}</h3>
+            <p class="mn-combo__sets mono">${esc(C.sets)}</p>
+          </div>
+          <p class="mn-combo__d">${esc(C.d)}</p>
+          <div class="mn-combo__buy">
+            <p class="mn__price">${esc(C.price)}</p>
+            <p class="mn-combo__meta mono">${esc(C.save)}<br>${esc(C.term)}</p>
+            <button class="btn btn--accent btn--sm mn__want" type="button" data-n="combo">${esc(M.wantCombo)}</button>
+          </div>
+        </div>`;
+      terms.innerHTML = M.terms.map(g => `
+        <div class="mn-terms__g reveal${g.k ? ' is-' + g.k : ''}">
+          <h3 class="mn-terms__h">${esc(g.h)}</h3>
+          <ul>${g.b.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+        </div>`).join('');
+      const fresh = $$('.reveal', grid.parentElement).filter(el => el.closest('#mnGrid,#mnCombo,#mnTerms'));
+      if (first) { fresh.forEach(el => revealObs.observe(el)); first = false; }
+      else fresh.forEach(el => el.classList.add('in'));
+    }
+    grid.parentElement.addEventListener('click', e => {
+      const b = e.target.closest('.mn__want'); if (!b) return;
+      const M = D().menu, n = b.dataset.n;
+      const f = $('#form'); const sel = f.elements.topic;
+      sel.value = 'tg-menu';
+      const fld = sel.closest('.f'); fld.classList.add('pre'); fld.classList.remove('bad');
+      f.elements.task.value = n === 'combo' ? M.taskCombo.replace('{t}', M.combo.t) : M.task.replace('{n}', n).replace('{t}', M.items[n - 1].t);
+      $('.form__status', f).textContent = M.picked;
+      f.scrollIntoView({ behavior: RM ? 'auto' : 'smooth', block: 'start' });
+      setTimeout(() => f.elements.name.focus({ preventScroll: true }), RM ? 0 : 700);
+    });
+    langListeners.push(render);
+    render();
+  })();
+
+  /* ---------------------------------------------------------
      FORM
      --------------------------------------------------------- */
   (function form() {

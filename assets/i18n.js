@@ -95,6 +95,8 @@ window.I18N = {
     'f.choose':'Выберите направление',
     'o.chatbots':'AI-чат-боты и Telegram-боты','o.agents':'AI-агенты и ассистенты','o.crm':'CRM и автоматизация продаж','o.process':'Автоматизация бизнес-процессов','o.docs':'AI-обработка документов','o.integration':'API и интеграция систем','o.analytics':'AI-аналитика и отчётность',
     'o.sc0':'Сценарий: обработка заявок','o.sc1':'Сценарий: поддержка клиентов','o.sc2':'Сценарий: работа с документами','o.sc3':'Сценарий: внутренний AI-ассистент','o.unsure':'Пока не знаю, нужен аудит',
+    'o.tgmenu':'Меню автоматизации Telegram','nav.menu':'Цены',
+    'mn.title':'МЕНЮ АВТОМАТИЗАЦИИ<br>TELEGRAM','mn.aside':'Для воронок Instagram → Telegram, где продажа идёт через менеджера в личке. Каждая позиция заканчивается отчётом, таблицей или работающим ботом. Начать можно с одной, первая запускается от 3 дней.','mn.cta':'Напишите номер позиции. Пришлём демо по вашим данным в течение 3 дней.','mn.tg':'НАПИСАТЬ В TELEGRAM','mn.form':'ОСТАВИТЬ ЗАЯВКУ',
     'f.send':'ОТПРАВИТЬ ЗАЯВКУ','f.ok':'ЗАЯВКА ПОЛУЧЕНА.','f.okSub':'Мы ответим по контакту, который вы оставили.','f.again':'ОТПРАВИТЬ ЕЩЁ',
     'ft.tag':'АВТОМАТИЗАЦИЯ И AI ДЛЯ БИЗНЕС-ПРОЦЕССОВ.','ft.m':'МЕНЬШЕ РУЧНОЙ РАБОТЫ.','ft.ops':'ВСЕ СИСТЕМЫ РАБОТАЮТ.'
   },
@@ -140,6 +142,26 @@ window.I18N = {
         {c:'Development', t:[['Python','Data processing, AI pipelines and custom backends.'],['JavaScript / TypeScript','Web interfaces, bots and integration code.'],['Node.js','Servers for bots, webhooks and APIs.'],['REST API','The standard way systems talk to each other.'],['Webhooks','Instant signals when something happens in a tool.']]},
         {c:'Data & Infrastructure', t:[['PostgreSQL','Database for structured business data.'],['Supabase','Postgres with auth, storage and APIs ready to use.'],['Airtable','A table with database features that a team can edit without a developer.'],['Google Sheets','A familiar table that automations can read from and write to.']]}
       ],
+      menu: {
+        art:'Result', want:'I want №', wantCombo:'I want the combo', picked:'Selected in the form below.',
+        task:'I want №{n}: {t}', taskCombo:'I want the combo: {t}',
+        items: [
+          {t:'Funnel map', art:'PDF report', price:'15,000 RUB', sub:'', term:'3 days, one-time', b:['We go through your channel, chat and message chains','We show where people drop off','Top 5 growth points, in priority order']},
+          {t:'Morning digest', art:'A chat message every day', price:'20,000 RUB', sub:'+ 6,000 RUB/mo', term:'5 days', b:['New subscribers and churn for yesterday','What people discussed in the chat and what they asked','Unanswered questions as a list, so none get lost']},
+          {t:'Competitor scan', art:'PDF report and Google Sheet', price:'15,000 RUB/mo', sub:'', term:'first report in 7 days', b:['10 channels in your niche: what they post and how they sell','Offers, prices, promotions, posting frequency','What to take into your own funnel']},
+          {t:'Warm leads list', art:'A Google Sheet every week', price:'20,000 RUB', sub:'+ 10,000 RUB/mo', term:'7 days', b:['Who asked in chats about the product, prices or delivery','A link to each message and its processing status','The manager gets a ready list instead of scrolling chats']},
+          {t:'Auto-replies in DMs', art:'A working bot scenario and a guide', price:'45,000 RUB', sub:'', term:'7 days, one-time', b:['Answers typical questions about products, prices and delivery','Does not quote a price before diagnostics and never gives discounts on its own','Hands complex questions to an operator with the full chat history']},
+          {t:'Content report', art:'A PDF report once a month', price:'15,000 RUB/mo', sub:'', term:'report by the 5th', b:['Which posts and chains brought subscribers and requests','Which formats brought nothing','What to repeat and what to drop']},
+          {t:'Team chat review', art:'An evening digest plus daily, weekly and monthly reports', price:'20,000 RUB', sub:'+ 10,000 RUB/mo', term:'7 days', b:['We watch the chat where managers reply to clients','An LLM checks every conversation against the sales script','Reply speed, missed clients, departures from the script','Results for each manager by day, week and month','We read only work conversations with clients, never personal messages']}
+        ],
+        combo: {t:'Turnkey funnel', sets:'№1 + №5 + №2', d:'Audit, then auto-replies in DMs, then morning digests. The minimum set that stops requests from getting lost.', price:'70,000 RUB', save:'you save 10,000 RUB', term:'launch in 12 days'},
+        terms: [
+          {h:'Demo before payment', k:'yes', b:['We send a sample: a mini scan of 3 competitor channels or a one-day morning digest','You see a real result first, then choose positions','If you do not like it, we stop there']},
+          {h:'What stays with you', k:'yes', b:['All reports, sheets and settings are your files','We work through your Telegram account, and you keep access','We stay within Telegram limits, so the channel is not at risk']},
+          {h:'Not included', k:'no', b:['Running Instagram, Reels and buying traffic','Medical claims and health result promises','Sales growth guarantees in percent','CRM and warehouse: a possible next step, priced separately']},
+          {h:'Terms', k:'', b:['Prices include VAT, estimates are conservative','One-time work: 50% at start, 50% on acceptance','Subscriptions are monthly, support included','Acceptance by artifact checklist, 2 weeks of fixes after launch']}
+        ]
+      },
       ui: { run:'RUN SCENARIO', running:'RUNNING...', again:'RUN AGAIN', complete:'scenario complete', sending:'Sending...', fail:'Could not send. Please try again or contact us directly.', preselected:'Scenario selected in the form below.' }
     },
     ru: {
@@ -181,6 +203,26 @@ window.I18N = {
         {c:'Разработка', t:[['Python','Обработка данных, AI-пайплайны и собственные бэкенды.'],['JavaScript / TypeScript','Веб-интерфейсы, боты и код интеграций.'],['Node.js','Серверы для ботов, вебхуков и API.'],['REST API','Стандартный способ общения систем друг с другом.'],['Webhooks','Мгновенные сигналы, когда в сервисе что-то происходит.']]},
         {c:'Данные и инфраструктура', t:[['PostgreSQL','База для структурированных данных бизнеса.'],['Supabase','Postgres с авторизацией, хранилищем и готовым API.'],['Airtable','Таблица с возможностями базы данных, которую команда правит без разработчика.'],['Google Sheets','Привычная таблица, из которой автоматизации читают данные и куда их записывают.']]}
       ],
+      menu: {
+        art:'Результат', want:'Хочу №', wantCombo:'Хочу комбо', picked:'Позиция выбрана в форме ниже.',
+        task:'Хочу №{n}: {t}', taskCombo:'Хочу комбо: {t}',
+        items: [
+          {t:'Карта воронки', art:'PDF-отчёт', price:'15 000 ₽', sub:'', term:'3 дня, разово', b:['Разбираем ваш канал, чат и цепочки сообщений','Показываем, где люди отваливаются','Топ-5 точек роста с приоритетами']},
+          {t:'Утренняя сводка', art:'Сообщение в чат каждый день', price:'20 000 ₽', sub:'+ 6 000 ₽/мес', term:'5 дней', b:['Новые подписчики и отток за вчера','О чём говорили в чате и какие были вопросы','Вопросы без ответа списком, чтобы ни один не потерялся']},
+          {t:'Разведка конкурентов', art:'PDF-отчёт и Google-таблица', price:'15 000 ₽/мес', sub:'', term:'первый отчёт через 7 дней', b:['10 каналов ниши: что публикуют и как продают','Офферы, цены, акции, частота постов','Что взять в свою воронку']},
+          {t:'Список тёплых лидов', art:'Google-таблица каждую неделю', price:'20 000 ₽', sub:'+ 10 000 ₽/мес', term:'7 дней', b:['Кто в чатах спрашивал про продукт, цены или доставку','Ссылка на сообщение и статус обработки','Менеджер берёт готовый список и не листает чаты']},
+          {t:'Автоответы в личке', art:'Работающий бот-сценарий и инструкция', price:'45 000 ₽', sub:'', term:'7 дней, разово', b:['Отвечает на типовые вопросы про продукты, цены и доставку','Не называет цену без диагностики и сам не даёт скидок','Сложные вопросы передаёт оператору вместе с историей диалога']},
+          {t:'Отчёт по контенту', art:'PDF-отчёт раз в месяц', price:'15 000 ₽/мес', sub:'', term:'отчёт до 5 числа', b:['Какие посты и цепочки дали подписчиков и заявки','Какие форматы не дали ничего','Что повторить и что убрать']},
+          {t:'Контроль рабочего чата', art:'Сводка каждый вечер и отчёты за день, неделю и месяц', price:'20 000 ₽', sub:'+ 10 000 ₽/мес', term:'7 дней', b:['Следим за чатом, где менеджеры отвечают клиентам','LLM проверяет каждый диалог на соблюдение скрипта','Скорость ответа, пропущенные клиенты, отступления от скрипта','Итоги по каждому менеджеру за день, неделю и месяц','Смотрим только рабочие диалоги с клиентами, личные сообщения не читаем']}
+        ],
+        combo: {t:'Воронка под ключ', sets:'№1 + №5 + №2', d:'Аудит, затем автоответы в личке, затем утренние сводки. Минимальный набор, чтобы заявки перестали теряться.', price:'70 000 ₽', save:'выгода 10 000 ₽', term:'запуск за 12 дней'},
+        terms: [
+          {h:'Демо до оплаты', k:'yes', b:['Пришлём пример: мини-разведку по 3 каналам конкурентов или утреннюю сводку за 1 день','Вы видите реальный результат и потом выбираете позиции','Не понравилось, не продолжаем']},
+          {h:'Что остаётся у вас', k:'yes', b:['Все отчёты, таблицы и настройки остаются вашими файлами','Работаем через ваш аккаунт Telegram, доступ остаётся у вас','Соблюдаем лимиты Telegram, канал не рискует']},
+          {h:'Что не входит', k:'no', b:['Ведение Instagram, Reels и закупка трафика','Медицинские заявления и обещания результата по здоровью','Гарантии роста продаж в процентах','CRM и склад: возможный следующий этап, отдельно']},
+          {h:'Условия', k:'', b:['Цены с НДС, оценка консервативная','Разовые работы: 50% на старте, 50% при приёмке','Подписки помесячно, поддержка включена','Приёмка по чек-листу, 2 недели правок после запуска']}
+        ]
+      },
       ui: { run:'ЗАПУСТИТЬ СЦЕНАРИЙ', running:'ВЫПОЛНЯЕТСЯ...', again:'ЗАПУСТИТЬ СНОВА', complete:'сценарий выполнен', sending:'Отправляем...', fail:'Не удалось отправить. Попробуйте ещё раз или свяжитесь с нами напрямую.', preselected:'Сценарий выбран в форме ниже.' }
     }
   }
